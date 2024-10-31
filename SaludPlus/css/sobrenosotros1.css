@@ -1,0 +1,204 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #F5E8D2;
+}
+
+
+/* Header */
+header nav {
+    background-color: #028490;
+    padding: 10px;
+    width: 100%;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 35px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* Mission, Vision, and Values Section */
+.banner1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F5E8D2;
+    color: #ffffff;
+    padding: 20px;
+}
+.banner1 div {
+    width: 300px;
+    text-align: center;
+    background-color: #0D3A45;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.banner1 h2 {
+    font-size: 24px;
+}
+
+.banner1 p {
+    font-size: 16px;
+     margin: 20px;
+}
+
+/* Origin Section */
+.origen {
+    display: flex;
+    align-items:center;
+    padding: 20px;
+    text-align: left;
+}
+
+.origen_div {
+    display: flex;
+    margin-left: 20px;
+    text-align: left;
+    color: #333;
+    align-items: center;
+}
+.origen p {
+    display:flex;
+    text-align: left;
+}
+
+.origen h2 {
+    display: flex;
+    font-size: 38px;
+    color: #333;
+    margin-right: 30px;
+    margin-bottom: 250px;
+}
+
+.origen img {
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Our Team Section */
+.nuestro_equipo {
+    padding: 40px;
+    background-color: #0D3A45;
+    text-align: center;
+    color: #fff7f7;
+}
+
+.nuestro_equipo h2 {
+    font-size: 30px;
+    color: #fff7f7;
+    text-align: left;
+}
+
+.nuestro_equipo div {
+    display: inline-block;
+    height: 200px;
+    margin: 40px;
+    text-align: center;
+}
+
+.nuestro_equipo img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+.nuestro_equipo h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff7f7;
+}
+.parte2 h3{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.parte2 div{
+    display: 1;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    margin-left: 110px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.parte2 img {
+    width: 160px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #0D3A45;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer .contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .contactanos {
+    display: flex;
+    gap: 30px;
+}
+
+footer .contactanos i {
+    font-size: 20px; /* Ajusta el tamaño del ícono */
+    color: rgb(255, 255, 255); /* Cambia el color del ícono */
+}
+
+footer .contactanos p {
+    margin-left: 10px; /* Espaciado entre ícono y texto */
+}
+
+footer .boton-contacto button {
+    background-color: #ffffff;
+    color: rgb(76, 108, 136);
+    height: auto;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 60px;
+}
+
+footer .boton-contacto button a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}

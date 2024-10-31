@@ -1,0 +1,255 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado */
+header {
+    background-color: #028490;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #F5E8D2;
+}
+
+/* Sección tresdoc1 */
+.tresdoc1 .imagen-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tresdoc1 .imagen-ajustable {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.dos {
+    display: flex;
+    flex: 1;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+.hit {
+    width: 350px;
+}
+.texto-3doc{
+    margin-left: 250px;
+    width: 350px;
+}
+.texto-3doc p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.boton-leermas1 button {
+    background-color: #0D3A45;
+    color: white;
+    border: none;
+    padding: 10px 15px 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex: content;
+    margin-top: 20px;
+    margin-left: 300px;
+    width: 120px;
+}
+
+.boton-leermas1 button a {
+    color: white;
+    text-decoration: none;
+}
+
+.boton-leermas1 button:hover {
+    background-color: #028490;
+}
+
+/* Sección descubre1 */
+.descubre1 {
+    background-color: #0D3A45;
+    text-align: left;
+    color: #ffffff;
+    display: flex;
+}
+
+.descubre1 .subti {
+    display:flexbox;
+    margin-top: 0px;
+    margin-bottom: 200px;
+    font-size: 18px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.descubre1 .tex {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-bottom: 90px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.descubre1 .cincuenta {
+    display: flex;
+    margin-top: 80px;
+}
+
+.descubre1 .cincuenta div {
+    width: 200px;
+    margin: 30px;
+}
+
+.descubre1 .rojo img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    margin-top: 50px;
+}
+
+/* Sección salud-conectando */
+.salud-conectando {
+    display: flex;
+    align-items:flex-start;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.salud-conectando img {
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.salud-conectando-texto {
+    flex: 1;
+    text-align:right;
+    font-size: 20px;
+}
+
+.salud-conectando-texto p {
+    margin-top: 40px;
+}
+.salud-conectando.boton-leermas2{
+    text-align: center;
+}
+.boton-leermas2 button {
+    background-color: #0D3A45;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+
+
+}
+
+.boton-leermas2 button a {
+    color: white;
+    text-decoration: none;
+}
+
+.boton-leermas2 button:hover {
+    background-color: #028490;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0D3A45;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer .contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .contactanos {
+    display: flex;
+    gap: 30px;
+}
+
+footer .contactanos i {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+footer .contactanos p {
+    margin-left: 10px;
+}
+
+footer .boton-contacto button {
+    background-color: #ffffff;
+    color: rgb(76, 108, 136);
+    height: auto;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 60px;
+}
+
+footer .boton-contacto button a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
