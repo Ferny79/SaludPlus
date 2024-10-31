@@ -1,5 +1,5 @@
 # Salud Plus
-
+:v
 ## Descripción del Proyecto
 
 Salud Plus es una plataforma digital diseñada para mejorar el acceso a la atención médica en comunidades vulnerables de Perú. Nuestro objetivo es conectar a estas comunidades con personal médico cualificado y recursos de salud, utilizando tecnología para facilitar el acceso a servicios esenciales y contribuir a un sistema de salud más inclusivo. La plataforma no solo busca ser una solución accesible y confiable, sino también sensibilizar y promover la salud y el bienestar en regiones remotas y de difícil acceso.
