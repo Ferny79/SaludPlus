@@ -1,0 +1,157 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #FFFFFF;
+    background-color: #F5E8D2;
+}
+
+/* Estilos para la barra de navegación */
+header nav {
+    background-color: #028490;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 35px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Estilos para el título de verificación */
+.verif-titulo {
+    margin-top: 50px;
+    text-align: center;
+    color: #16262D;
+}
+
+.verif-titulo h1 {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.verif-titulo p {
+    font-size: 16px;
+}
+
+/* Estilos para la sección de código de verificación */
+.codigo-cel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.codigo-cel form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.codigo-cel input[type="text"] {
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    background-color: #d2caa2;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.codigo-cel button[type="submit"] {
+    background-color: #028490;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.no-codigo {
+    margin-top: 10px;
+}
+
+.no-codigo a {
+    color: #028490;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #0D3A45;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer .contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .contactanos {
+    display: flex;
+    gap: 30px;
+}
+
+footer .contactanos h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+footer .contactanos div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .contactanos img {
+    width: 20px;
+    height: 20px;
+}
+
+footer .contactanos p {
+    font-size: 14px;
+    margin: 0;
+}
+
+footer .boton-contacto button {
+    background-color: #ffffff;
+    color: #4C6C88;
+    height: auto;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 60px;
+}
+
+footer .boton-contacto button a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
