@@ -1,98 +1,118 @@
-/* Estilos generales */
+/* General Styles */
+:root {
+    --primary-color: #028490;
+    --secondary-color: #16262D;
+    --accent-color: #0D3A45;
+    --background-color: #F5E8D2;
+    --text-color: #FFFFFF;
+    --card-background: #FFFFFF;
+    --text-highlight: #000000;
+}
+
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #F5E8D2;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Asegura que el footer esté al pie de la página */
-}
-
-/* Reseteo básico de estilos */
-* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-highlight);
 }
 
-a {
-    color: white;
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+/* Header */
+header nav {
+    background-color: var(--primary-color);
+    padding: 10px;
 }
 
-/* Estilos para el encabezado */
-header {
-    background: #028490;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-nav ul {
+header nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
-    margin: 0 15px;
+header nav ul li {
+    margin-right: 35px;
 }
 
-nav ul li img {
-    height: 50px; /* Ajusta el tamaño del logo */
+header nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+header nav ul li img{
+    width: 30px
 }
 
-/* Estilos para el título principal */
-main > div {
+/* Main Content */
+.perfil-paciente {
+    padding: 20px;
     text-align: center;
-    margin: 20px 0;
 }
 
-h1 {
-    color: #333;
+.perfil-paciente h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-/* Estilos para el contenedor de fechas */
-.contenedor-fechas {
-    background-color: #028490; /* Color del contenedor */
-    padding: 20px; /* Espacio interno del contenedor */
-    border-radius: 15px; /* Bordes redondeados */
-    margin: 20px 70px; /* Margen superior e inferior */
+.datos-paciente {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
-/* Estilos para la sección de fechas */
-.fechas {
-    display: flex;
-    justify-content: space-around; /* Espacio uniforme entre las fechas */
+.datos-paciente p {
+    font-size: 1rem;
+    margin: 5px 0;
 }
 
-.fecha {
+.historial {
+    padding: 20px;
     text-align: center;
-    border: 1px solid #ccc; /* Borde alrededor de las cajas */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px;
-    background: #fff; /* Fondo blanco para las cajas */
-    width: 150px; /* Ancho fijo para las cajas */
 }
 
-/* Estilos para el pie de página */
+.historial h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.consulta {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.consulta h3 {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.consulta p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Footer */
 footer {
-    background-color: #0D3A45;
-    color: white;
-    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 20px;
     text-align: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
 }
 
 footer .contacto {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 
 footer .contactanos {
@@ -101,26 +121,31 @@ footer .contactanos {
 }
 
 footer .contactanos i {
-    font-size: 20px; /* Ajusta el tamaño del ícono */
-    color: rgb(255, 255, 255); /* Cambia el color del ícono */
-}
-
-footer .contactanos p {
-    margin-left: 10px; /* Espaciado entre ícono y texto */
+    font-size: 20px;
 }
 
 footer .boton-contacto button {
-    background-color: #ffffff;
-    color: rgb(76, 108, 136);
-    height: auto;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 60px;
+    transition: background-color 0.3s ease;
+}
+
+footer .boton-contacto button:hover {
+    background-color: var(--primary-color);
 }
 
 footer .boton-contacto button a {
-    color: rgb(0, 0, 0);
+    color: inherit;
     text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .datos-paciente, .consulta {
+        width: 90%;
+    }
 }
