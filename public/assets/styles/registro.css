@@ -35,6 +35,9 @@ header nav ul li a {
     font-size: 16px;
     font-weight: normal;
 }
+header nav ul li img{
+    width: 30px
+}
 
 /* Sección de Registro */
 .registro {
