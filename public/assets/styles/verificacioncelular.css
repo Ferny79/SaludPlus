@@ -33,6 +33,9 @@ header nav ul li a {
     text-decoration: none;
 }
 
+header nav ul li img{
+    width: 30px
+}
 /* Estilos para el título de verificación */
 .verif-titulo {
     margin-top: 50px;
