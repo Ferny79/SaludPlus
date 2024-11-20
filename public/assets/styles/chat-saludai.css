@@ -1,179 +1,155 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color: #FFFFFF;
-    background-color: #F5E8D2;
-}
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #FFFFFF;
+            background-color: #F5E8D2;
+            scroll-behavior: smooth;
+        }
 
-/* Estilos para la barra de navegación */
-header nav {
-    background-color: #028490;
-    padding: 10px;
-}
+        header nav {
+            background: #028490;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFF;
+        }
 
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start; /* Alinea todo a la izquierda */
-    margin: 0;
-    padding: 0;
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
 
-header nav ul li {
-    margin-right: 35px;
-}
+        header nav ul li {
+            margin: 0 15px;
+        }
 
-header nav ul li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
+        header nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-/* Estilos para el menú lateral */
-.menu-lateral {
-    background-color: #16262D;
-    color: #FFFFFF;
-    width: 200px;
-    padding: 20px;
-    height: calc(100vh - 60px); /* Ajusta el alto al viewport */
-    position: fixed;
-}
+        header nav ul li a:hover {
+            color: #FFD700;
+        }
+        header nav ul li img{
+            width: 30px
+        }
 
-.menu-lateral h2 {
-    margin-top: 0;
-    font-size: 20px;
-}
+        /* Menu lateral */
+        .menu-lateral {
+            background: #16262D;
+            color: #FFF;
+            width: 220px;
+            padding: 20px;
+            height: calc(100vh - 60px);
+            position: fixed;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+        }
 
-.historial-ai {
-    margin-top: 20px;
-}
+        .menu-lateral h2 {
+            margin-top: 0;
+            font-size: 22px;
+        }
 
-.tema {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 15px;
-    color: #028490;
-}
+        .tema {
+            background: #FFF;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            color: #028490;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
 
-.tema h3 {
-    margin: 0;
-    font-size: 18px;
-}
+        .tema:hover {
+            transform: translateY(-3px);
+        }
 
-.descripcion {
-    margin-top: 10px;
-    font-size: 14px;
-}
+        .tema h3 {
+            margin: 0;
+            font-size: 18px;
+        }
 
-.fecha {
-    color: #A9A9A9;
-    font-size: 12px;
-    text-align: right;
-    margin-top: 10px;
-}
+        .descripcion {
+            margin-top: 10px;
+            font-size: 14px;
+        }
 
-/* Estilos para el título SaludAI */
-.titulo-saludai {
-    font-size: 24px;
-    color: #000000;
-    margin-left: 250px; /* Ajusta según la posición deseada junto a la barra lateral */
-    text-align: left; /* Opcional, asegura el alineamiento hacia la izquierda */
-}
+        .fecha {
+            color: #A9A9A9;
+            font-size: 12px;
+            text-align: right;
+            margin-top: 10px;
+        }
 
-.titulo-consulta {
-    font-size: 24px;
-    color: #000000;
-    margin-left: 580px;
-    margin-top: -80px; /* Ajusta según la posición deseada junto a la barra lateral */
-    text-align: left; /* Opcional, asegura el alineamiento hacia la izquierda */
-}
+        /* Estilos para el título SaludAI */
+        .titulo-saludai {
+            font-size: 24px;
+            color: #000000;
+            margin-left: 300px; /* Ajustado para que la "S" no sea tapada */
+            text-align: left;
+            margin-top: 20px;
+        }
 
-/* Estilos para el input de consulta */
-.input-consulta {
-    width: 300px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #cccccc;
-    background-color: #16262D; /* Color solicitado para el fondo */
-    color: #ffffff; /* Cambia el color del texto si es necesario */
-    margin-left: 500px;
-    margin-top: 160px;
-}
+        .titulo-consulta {
+            font-size: 24px;
+            color: #000000;
+            text-align: center;
+            margin: 40px 0;
+        }
 
-.chat h1 {
-    font-size: 24px;
-    color: #16262D;
-}
+        /* Estilos para el input de consulta */
+        .input-consulta-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            position: relative;
+            width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-.chat form {
-    margin-top: 20px;
-}
+        .input-consulta {
+            width: 100%;
+            padding: 10px 40px 10px 10px; /* Espacio adicional a la derecha para el ícono */
+            border-radius: 8px;
+            border: 1px solid #cccccc;
+            background-color: #16262D;
+            color: #ffffff;
+        }
 
-.chat label {
-    font-size: 16px;
-    color: #0D3A45;
-}
+        .enviar-boton {
+            position: absolute;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
 
-#consulta {
-    width: 100%;
-    max-width: 400px; /* Controla el ancho máximo */
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    background-color: #16262D; /* Color de fondo del campo de texto */
-    color: white;
-}
-
-/* Estilos para el pie de página */
-footer {
-    background-color: #0D3A45;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-}
-
-footer .contacto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-footer .contactanos {
-    display: flex;
-    gap: 30px;
-}
-
-footer .contactanos i {
-    font-size: 20px; /* Ajusta el tamaño del ícono */
-    color: rgb(255, 255, 255); /* Cambia el color del ícono */
-}
-
-footer .contactanos p {
-    margin-left: 10px; /* Espaciado entre ícono y texto */
-}
-
-footer .boton-contacto button {
-    background-color: #ffffff;
-    color: rgb(76, 108, 136);
-    height: auto;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 60px;
-}
-
-footer .boton-contacto button a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
+        /* Chat response styles */
+        .respuesta-ai {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background: #028490;
+            color: #FFF;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
