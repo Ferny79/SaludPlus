@@ -34,6 +34,9 @@ header nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
 }
+header nav ul li img{
+    width: 30px
+}
 
 /* Estilos para el botón de emergencia */
 section.emergencia .boton-emergencias {
