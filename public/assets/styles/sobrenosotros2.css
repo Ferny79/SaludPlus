@@ -35,7 +35,9 @@ header nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
 }
-
+header nav ul li img{
+    width: 30px
+}
 
 /* Mission, Vision, and Values Section */
 .banner1 {
