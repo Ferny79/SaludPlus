@@ -10,6 +10,9 @@ header {
     color: white;
     padding: 10px 20px; /* Espaciado interno del encabezado */
 }
+header nav ul li img{
+    width: 30px
+}
 
 nav ul {
     list-style: none; /* Eliminar puntos de la lista */
