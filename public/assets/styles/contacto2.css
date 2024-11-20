@@ -25,6 +25,9 @@ nav a {
     color: white; /* Color de los enlaces */
     text-decoration: none; /* Sin subrayado en enlaces */
 }
+header nav ul li img{
+    width: 30px
+}
 
 main {
     padding: 20px; /* Espaciado interno del contenido principal */
