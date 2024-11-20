@@ -45,6 +45,9 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #0056b3;
 }
+header nav ul li img{
+    width: 30px
+}
 
 /* Contenido principal */
 main {
