@@ -1,26 +1,33 @@
-/* Estilos generales */
+/* General Styles */
+:root {
+    --primary-color: #028490;
+    --secondary-color: #16262D;
+    --accent-color: #0D3A45;
+    --background-color: #F5E8D2;
+    --text-color: #FFFFFF;
+    --card-background: #FFFFFF;
+    --text-highlight: #000000;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color: #FFFFFF;
-    background-color: #F5E8D2;
+    background-color: var(--background-color);
+    color: var(--text-highlight);
 }
 
-/* Estilos para la barra de navegación */
+/* Header */
 header nav {
-    background-color: #028490;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
 header nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -29,90 +36,98 @@ header nav ul li {
     margin-right: 35px;
 }
 
+header nav ul li img {
+    height: 30px;
+}
+
 header nav ul li a {
-    color: #FFFFFF;
+    color: var(--text-color);
     text-decoration: none;
-    font-size: 16px;
+    font-weight: bold;
 }
 
-/* Estilos para el contenido principal */
-main {
-    margin: 20px;
-    flex: 1;
+/* Main Content */
+.cuenta-container {
+    padding: 20px;
+    text-align: center;
 }
 
-main h1 {
-    font-size: 28px;
-    color: #16262D;
+.cuenta-container h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
     margin-bottom: 20px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
 }
 
-/* Contenedor de las secciones en línea */
-section.principal {
+.datos-personales, .patologias, .dni {
     display: flex;
-    justify-content:center ; /* Espacio uniforme entre las secciones */
-    margin: 30px;
-    flex:1;
-}
-
-/* Estilo para cada sección */
-section.datos, section.patologias, section.dni {
-    background-color: #ebebea;
-    border-radius: 10px;
-    padding: 30px;
-    color: #028490;
-    flex: 1;
-    margin: 10px;
-    max-width: 300px; /* Limita el ancho de cada sección */
     align-items: center;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    flex: 1;
+    max-width: 150px;
     text-align: center;
-    height: 300px;
-    border-color: #16262D;
 }
 
-section.datos h2, section.patologias h2, section.dni h2 {
-    font-size: 22px;
-    color: #0D3A45;
-    margin-top: 0;
+.image-container img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Botones dentro de cada sección */
-section.datos button, section.patologias button, section.dni button {
-    background-color: #028490;
-    color: #FFFFFF;
+.content-container {
+    flex: 2;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.content-container h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.content-container p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.actualizar-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
-    margin-top: 200px;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
-section.datos button a, section.patologias button a, section.dni button a {
-    color: #FFFFFF;
-    text-decoration: none;
+.actualizar-btn:hover {
+    background-color: var(--accent-color);
 }
 
-
-/* Estilos para el pie de página */
+/* Footer */
 footer {
-    background-color: #0D3A45;
-    color: white;
-    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 20px;
     text-align: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
 }
 
 footer .contacto {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 
 footer .contactanos {
@@ -121,26 +136,40 @@ footer .contactanos {
 }
 
 footer .contactanos i {
-    font-size: 20px; /* Ajusta el tamaño del ícono */
-    color: rgb(255, 255, 255); /* Cambia el color del ícono */
-}
-
-footer .contactanos p {
-    margin-left: 10px; /* Espaciado entre ícono y texto */
+    font-size: 20px;
 }
 
 footer .boton-contacto button {
-    background-color: #ffffff;
-    color: rgb(76, 108, 136);
-    height: auto;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 60px;
+    transition: background-color 0.3s ease;
+}
+
+footer .boton-contacto button:hover {
+    background-color: var(--primary-color);
 }
 
 footer .boton-contacto button a {
-    color: rgb(0, 0, 0);
+    color: inherit;
     text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .datos-personales, .patologias, .dni {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
+
+    .content-container {
+        padding-left: 0;
+    }
 }
